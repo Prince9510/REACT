@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+  background-color: rgba(0, 255, 17, 0.124);
+  height: inherit;
+  /* display: flex; */
+  width: 400px;
+  padding: 20px;
+}
+.name{
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  outline: 0;
+  border: 0;
+}
+.phone{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  padding-left: 10px;
+  outline: 0;
+  border: 0;
+}
+.email{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  padding-left: 10px;
+  outline: 0;
+  border: 0;
+}
+.password{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  padding-left: 10px;
+  outline: 0;
+  border: 0;
+}
+.confirmpassword{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  padding-left: 10px;
+  outline: 0;
+  border: 0;
+}
+
+.register{
+  height: 40px;
+  margin-top: 10px;
+  border: 0;
+  color: white;
+  width: 80px;
+  background-color: rgba(165, 42, 42, 0.334);
+}
+span{
+  color: red;
+  font-size: 14px;
+  /* position:   relative; */
+  top: 10px;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+/* daynamic  */
+
+
+.daynamic-main{
+  background-color: aqua;
+  width: 400px;
+  height: inherit;
+}
