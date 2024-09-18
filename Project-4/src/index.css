@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f3f0e7;
+    font-family: "Montserrat", sans-serif;
+}
+.seller {
+    background-color: #fcfcfb;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 3px 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 19px;
+    height: inherit;
+    width: 450px;
+}
+label {
+    font-weight: 500;
+    font-size: 12px;
+    color: #3d3b37;
+}
+input {
+    margin-left: 1px;
+    margin-top: 3px;
+    height: 30px;
+    outline: 0;
+    margin-bottom: 4px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f0;
+    width: 100%;
+}
+.register {
+    margin-top: 20px;
+    height: 35px;
+    background-color: #e27d60;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+}
+span {
+    display: block;
+    font-size: 12px;
+    color: #e94b35;
+}
+
+/* //////////////////////// header //////////// */
+
+
+
+
+.main-info {
+    background-color: #3f3d3a;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    padding: 10px;
+    background-color: #514f4a;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.frist-info {
+    font-weight: bold;
+    font-size: 14px;
+    color: #d6d3ce;
+}
+
+.in {
+    font-size: 16px;
+    color: #fdfdfd;
+}
+.detail-btn{
+    /* margin-top: 20px; */
+    position: absolute;
+    top: 30px;
+    left: 1300px;
+    height: 40px;
+    background-color: #e27d60;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    width: 120px;
+
+}
+
+
+
+/* add product form  */
+
+
+
+
+.main-product{
+    background-color: #fcfcfb;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 3px 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: inherit;
+    width: 450px;
+}
+
+.flex{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    height: inherit;
+    width: inherit;
+    /* background-color: red; */
+    padding: 20px;
+}
+
+
+#select-items{
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #f1f1f0;
+    cursor: pointer;
+    outline: 0;
+    padding-left: 5px;
+}
+
+
+.main-product input{
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #f1f1f0;
+    outline: 0;
+    padding: 10px;
+}
+.product-name-electric{
+    margin-top: 10px;
+    
+}
+.main-product textarea{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #ccc;
+    background-color: #f1f1f0;
+    margin-top: 5px;
+    border: 0;
+    border: 1px solid #ccc;
+
+
+}
+.main-product textarea::placeholder{
+    font-size: 14px;
+   
+}
+.electricc-btn{
+    /* position: absolute; */
+    /* top: 30px; */
+    /* left: 1300px; */
+    margin-top: 20px;
+    height: 40px;
+    background-color: #e27d60;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+/* card  */
+
+
+
+
+.product-card {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content {
+    margin-bottom: 15px;
+}
+
+.product-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    color: #10b880;
+    margin-bottom: 5px;
+}
+
+.warranty {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.discount {
+    font-size: 14px;
+    color: #e27d60;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.add-to-cart-btn {
+    background-color: #10b880;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0d8f6b;
+}
