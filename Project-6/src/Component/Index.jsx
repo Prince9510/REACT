@@ -2,48 +2,49 @@ import React, { useState,useEffect } from 'react'
 
 export default function Index() {
 
-    const [name, setName] = useState("");
+    const [task, setTask] = useState("");
     const [record, setRecord] = useState([]);
     const [editindex, setEditIndex] = useState(null);
 
     useEffect(() => {
-        let data = JSON.parse(localStorage.getItem("Student")) || [];
+        let data = JSON.parse(localStorage.getItem("Task")) || [];
         setRecord(data);
     }, []);
 
     const handleAdd = () => {
-        let user = { id: record.length + 1, name, status: "Pending" };
-        let oldRecord = JSON.parse(localStorage.getItem("Student")) || [];
+        let user = { id: record.length + 1, task, status: "Pending" };
+        let oldRecord = JSON.parse(localStorage.getItem("Task")) || [];
 
         if (editindex) {
             let updatedRecord = oldRecord.map((item) => {
                 if (item.id === editindex) {
-                    item.name = name;
+
+
+                    item.task = task;
                     return item;
                 }
                 return item;
             });
-            localStorage.setItem("Student", JSON.stringify(updatedRecord));
+            localStorage.setItem("Task", JSON.stringify(updatedRecord));
             setRecord(updatedRecord);
             setEditIndex(null);
         } else {
             oldRecord.push(user);
             setRecord(oldRecord);
-            localStorage.setItem("Student", JSON.stringify(oldRecord));
+            localStorage.setItem("Task", JSON.stringify(oldRecord));
         }
-
-        setName("");
+        setTask("");
     };
 
     const handleDelete = (id) => {
         let deleteData = record.filter((item) => item.id !== id);
         setRecord(deleteData);
-        localStorage.setItem("Student", JSON.stringify(deleteData));
+        localStorage.setItem("Task", JSON.stringify(deleteData));
     };
 
     const handleEdit = (id) => {
         let singleData = record.find((item) => item.id === id);
-        setName(singleData.name);
+        setTask(singleData.task);
         setEditIndex(id);
     };
 
@@ -56,7 +57,7 @@ export default function Index() {
       });
 
         setRecord(updatedRecord);
-        localStorage.setItem("Student", JSON.stringify(updatedRecord));
+        localStorage.setItem("Task", JSON.stringify(updatedRecord));
     };
 
   return (
@@ -64,7 +65,7 @@ export default function Index() {
     <div className="container">
   <div className="todo-header">Task Manager</div>
   <div className="input-group mb-3">
-    <input type="text" value={name} className="form-control" placeholder="Add New Task" aria-label="Add New Task" onChange={(e) => setName(e.target.value)}/>
+    <input type="text" value={task} className="form-control" placeholder="Add New Task" aria-label="Add New Task" onChange={(e) => setTask(e.target.value)}/>
     <button className="btn add-task-btn" onClick={handleAdd}>
     {editindex ? "Update" : "Add"}
     </button>
@@ -85,7 +86,7 @@ export default function Index() {
                 return (
                     <tr key={i}>
         <td>{e.id}</td>
-        <td>{e.name}</td>
+        <td>{e.task}</td>
         <td>{e.status}</td>
         <td>
           <button className="btn btn-action btn-primary" onClick={() => handleEdit(e.id)}>Edit</button>
