@@ -1,16 +1,22 @@
-// eslint-disable-next-line no-unused-vars
 import React from 'react'
-import { Provider } from 'react-redux'
-import ReduxCounter from './Redux/ReduxCounter'
-import { store } from './App/Store'
+import { useSelector, useDispatch } from 'react-redux'
+import { decrement, increment } from './features/CounterSlice'
 
 
 export default function App() {
+  const count = useSelector((state) => state.counterkey.data )
+  const dispatch = useDispatch()
   return (
-  <>
-  <Provider store={store}>
-    <ReduxCounter/>
-  </Provider>
-  </>
+    <div>
+    <div className='main'>
+      <button aria-label="Increment value" onClick={() => dispatch(increment())}>
+        Increment
+      </button>
+      <span>{count}</span>
+      <button aria-label="Decrement value" onClick={() => dispatch(decrement())}>
+        Decrement
+      </button>
+    </div>
+  </div>
   )
 }
