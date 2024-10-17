@@ -1,0 +1,178 @@
+/* General styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  /* background-color: aqua; */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Center container */
+.main {
+  width: 40%;
+  /* background-color: red; */
+  padding: 20px;
+  position: relative;
+  left: 300px;
+  /* translate:(-50%, -50%); */
+  /* background-color: #fff; */
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+p {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Input fields */
+input {
+  width: 98%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.addbtn {
+  background-color: #4caf50;
+  color: white;
+  display: block;
+  margin-top: 10px;
+}
+
+.addbtn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.deletebtn {
+  background-color: #f44336;
+  color: white;
+  margin-inline: 5px;
+}
+
+.deletebtn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+.editbtn{
+  background-color: #ff9800;
+  color: white;
+  margin-inline: 5px;
+}
+
+.editbtn:hover {
+  background-color: #fb8c00;
+  transform: scale(1.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* table tr:nth-child(even) {
+  background-color: #f9f9f9;
+} */
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Actions buttons in the table */
+table td button {
+  width: 70px;
+  padding: 8px;
+}
+
+
+
+/* Select dropdown styling */
+#task-gender {
+  width: 102.5%;
+
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#task-gender:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+#task-gender option {
+  padding: 10px;
+}
+/* Priority select dropdown styling */
+#task-priority {
+  width: 102.5%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
+}
+
+#task-priority:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+.pri{
+  position: relative;
+  top: 10px;
+}
