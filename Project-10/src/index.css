@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.main {
+    /* background: linear-gradient(135deg, #76b852, #8DC26F); */
+    height: 600px;
+    width: 1200px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.inner-1, .inner-2 {
+    height: inherit;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* color: rgb(255, 255, 255); */
+}
+
+.inner-1 {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.inner-2 {
+    background: linear-gradient(135deg, #4776e6, #8e54e9);
+}
+
+.set-Money, .amount-debit, .amount-resone {
+    height: 40px;
+    width: 60%;
+    border-radius: 30px;
+    border: 0;
+    padding-left: 15px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.set-Money::placeholder, .amount-debit::placeholder, .amount-resone::placeholder {
+    color: #bbb;
+}
+
+.cricle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    color: #fff;
+    font-size: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.moneyadd {
+    font-size: 50px;
+}
+
+.money-debit-btn, .credit-btn {
+    height: 40px;
+    width: 60%;
+    border-radius: 30px;
+    border: 0;
+    background-color: #f56b2a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.money-debit-btn:hover, .credit-btn:hover {
+    background-color: #d84a1b;
+}
+
+.inputs-divs {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 80%;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f50101;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
