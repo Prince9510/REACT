@@ -1,0 +1,151 @@
+/* Dashboard.css */
+
+/* General styles for the Dashboard */
+.task-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Task input section */
+.task-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.inputs,
+.inputs,
+.description-field,
+.due-date-field,
+.category-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border 0.3s ease;
+}
+
+.inputs:focus,
+.inputs:focus,
+.description-field:focus,
+.due-date-field:focus,
+.category-field:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.task-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Task table styles */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.task-table th,
+.task-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.task-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.task-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.task-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.task-table td {
+    font-size: 1em;
+}
+
+.task-table button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    margin-inline: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.status-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.status-btn:hover {
+    background-color: #218838;
+}
+
+.status-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Styling for task status */
+.completed {
+    background-color: #28a745;
+    color: white;
+}
+
+.pending {
+    background-color: #f39c12;
+    color: white;
+}
+
