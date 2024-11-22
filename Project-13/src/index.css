@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a1a; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  background-color: #2a2a2a; /* Dark form background */
+  width: 380px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+  text-align: center;
+}
+
+.signup-container h1 {
+  color: #ffffff; /* White heading */
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #444; /* Darker border */
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #333; /* Darker background for inputs */
+  color: #fff; /* White text */
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #6f42c1; /* Soft purple border on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(111, 66, 193, 0.5); /* Purple glow */
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #444; /* Dark background for button */
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #e0e0e0; /* Light text */
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.signup-btn:hover {
+  background-color: #666; /* Lighter gray on hover */
+  transform: scale(1.03); /* Slight grow on hover */
+}
+
+.google-signin {
+  margin-top: 25px;
+  padding: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555; /* Dark gray background for Google button */
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.google-signin img {
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+}
+
+.google-signin:hover {
+  background-color: #777; /* Lighter gray on hover */
+  transform: scale(1.03); /* Slight grow on hover */
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa; /* Light gray text */
+}
+
+.footer a {
+  color: #6f42c1; /* Soft purple links */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
