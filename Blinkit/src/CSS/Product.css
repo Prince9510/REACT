@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.inner-field::-webkit-scrollbar {
+    display: none;
+  }
+  .inner-field{
+    scroll-behavior: smooth;
+  }
+  
+  
+  .inner-field {
+    scrollbar-width: none; 
+  }
+  
+  
+  .inner-field {
+    overflow-x: scroll; 
+    -ms-overflow-style: none;  
+  }
+
+.card{
+    border: 0.5px solid rgb(232, 232, 232);
+}
+.previous_button,
+.next_button{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+.product_title{
+  white-space: wrap;
+  overflow: hidden;
+  /* background-color: red; */
+  text-overflow: ellipsis;
+  width: 100%;
+}
